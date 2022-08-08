@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Poppins:wght@500;600;700;800&family=Rufina:wght@400;700&family=Work+Sans:wght@400;500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* creating some variables */
+:root{
+    --grad: linear-gradient(0deg,rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+ --color1: #ffff;
+  --helper: #8490ff;
+  --helper-tint: #f3f4ff;
+  --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+  --text1-6: 1.6rem;
+  --heading:  calc(4vw + 1rem);
+  --buttonFont: 1rem;
+  --heading48: 48px;
+  --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    
+}
+
+/* creating global classes */
+html{
+    font-family: "Work Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.heading{
+    font-size: var(--heading);
+}
+.text{
+    font-size: var(--text1-6);
+}
+.centerh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexj{
+    display: flex;
+    align-items: center;
+    width: 100%;    
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color1);
+}
+/* styling main section */
+body{
+    color: gray;
+    scroll-behavior: smooth;
+    
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    min-height: 100vh;
+    position: relative;
+    z-index: 9;
+    
+}
+
+.nav{
+    position: relative;
+    
+
+}
+header{
+    width: 15%;
+    position: fixed;
+    background-image: var(--grad);
+    min-height: 100vh;
+    overflow: hidden;
+    
+   
+}
+.header-container{
+    flex-direction: column;
+}
+.profile{
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+
+.profile img{
+    width: 200px;
+    
+    
+    
+}
+.links{
+    width: 100%;
+}
+.links ul{
+    padding: 4rem 0;
+    width: 100%;
+    
+    
+}
+.links li{
+    padding: 16px 0;
+    width: 100%;
+    text-align: left;
+    color: var(--color1);
+    font-size: var(--text1-6);
+    line-height: 1.6rem;
+    cursor: pointer;
+    
+    gap: 2rem;
+    width: 100%;
+    padding-left: 10%;
+    align-items: center;
+    
+}
+.main-hero{
+    height: 100vh;
+    position: relative;
+    
+}
+/* creating styles for buttonG */
+.buttonG{
+    background: var(--grad);
+    padding: 16px 32px;
+  border: none;
+  color: rgb(255 255 255);
+  display: inline-block;
+  font-size: var(--text1-6);
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: relative;
+}
+
+.buttonG:hover {
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+  color: rgb(255 255 255);
+}
+
+/* end styles for buttonG */
+.main-hero .hero-text{
+    display: none;
+    position: absolute;
+}
+#slide1{
+  display: block;   
+
+}
+.buttonB{
+    border: none;
+    font-size: var(--buttonFont);
+    color: var(--grad);
+}
+.show-hide{
+    display: none;
+}
+.main-hero{
+    display:flex;
+}
+/* form section */
+.cform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+
+}
+.cform input, .cform textarea{
+    background: white;
+    color: gray;
+    border: none;
+    padding: 16px 32px;
+    font-size: var(--text1-6);
+    
+    font-weight: 700;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.cform input:focus,.textArea:focus{
+    border: 3.6px solid gray;
+}
+.cform textarea{
+    height: 40vh;
+}
+/* end form section */
+
+.otherc{
+    margin: 1rem;
+    color: gray;
+    font-size: var(--text1-6);
+    border: 3px solid gray;
+    -webkit-transition: all 700ms linear;
+    -moz-transition: all 700ms linear;
+    -o-transition: all 700ms linear;
+    transition: all 700ms linear;
+    padding: 16px 32px;
+}
+.other-contact{
+    padding: 1rem 0;
+}
+.otherc i{
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.otherc:hover{
+    background-image: var(--grad);
+    color: var(--color1);
+}
+/* information section */
+.main-info .grid-two-col {
+    display: flex;
+    padding: 5rem 3rem;
+    gap: 3rem;
+  }
+  .bio-image{
+    width: auto;
+  }
+
+  .bio-image img{
+    width: 100%;
+    height: !00%;
+  }
+.common-heading{
+  font-size: var(--heading48);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.common-heading::before {
+  content: "";
+  position: absolute;
+  top: 114%;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--helper);
+}
+
+.common-heading::after {
+  content: "";
+  position: absolute;
+  top: 128%;
+  left: 1.5rem;
+  width: 100%;
+  height: 0.3rem;
+  background: var(--helper);
+}
+.bio-data-stats {
+    padding: 1.9rem 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .bio-progress-bar {
+    width: 100%;
+    height: 0.8rem;
+    /* background: var(--para); */
+    background-color: rgb(233 236 239);
+    border-radius: 10rem;
+    position: relative;
+    box-shadow: var(--shadpw);
+    /* overflow: hidden; */
+  }
+  
+  .bio-progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: inherit;
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%
+    );
+    border-radius: 10rem;
+  }
+  
+  /* to create the rectangle box  */
+  .bio-progress-bar span {
+    position: absolute;
+    top: 1.8rem;
+    right: 0%;
+    width: 4rem;
+    height: 2rem;
+    background: var(--helper);
+    color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    
+  }
+  
+  /* to create the traingle or caret symbol  */
+  .bio-progress-bar span::after {
+    content: "";
+    position: absolute;
+    top: -1.6rem;
+    width: 0rem;
+    height: 0rem;
+    border: 0.8rem solid var(--helper);
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+  }
+/* end information section */
+#menu{
+    
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+/* proffile area */
+.main-profile{
+    padding: 2rem;
+}
+.bgprofile{
+    background: var(--grad);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    border-radius: 12px;
+}
+.bgprofile img{
+    width: 200px;
+}
+.bgprofile h1{
+    font-size: var(--heading);
+    color: var(--color1);
+}
+.profile-content{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+.fullw{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+table{
+    width: 100%;
+}
+td{
+    font-size: var(--text1-6);
+    font-weight: 700;
+}
+.main-services,.main-contact{
+    padding: 2rem;
+}
+.services-content{
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.servicesitem{
+    width: 300px;
+
+}
+.servicesitem p{
+    text-align: center;
+}
+.servicesitem i{
+    font-size: 45px;
+}
+/* project styles */
+.main-project{
+    padding: 2rem;
+   
+}
+.projectchild{
+    padding-top: 3rem;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectchild a{
+    display: inline;
+    width: 500px;
+    display: block;
+    border: 5px solid gray;
+    border-radius: 5px;
+    height: 300px;
+    overflow: hidden;
+    background-color: red;
+}
+.projectchild img{
+    
+    width: 100%;
+    height: 100%;
+}
+/* end project styles */
+section > .common-heading::after{
+    width: 99%;
+}
+@media only screen and (max-width:1540px){
+    main{
+        grid-template-columns: 20% 1fr;
+    }
+    header{
+        width: 20%;
+    }
+}
+@media only screen and (max-width:1190px){
+    main{
+        grid-template-columns: 25% 1fr;
+    }
+    header{
+        width: 25%;
+    }
+    }
+@media only screen and (max-width:980px){
+    main{
+        grid-template-columns: 30% 1fr;
+    }
+    header{
+        width: 30%;
+    }
+
+}
+@media only screen and (max-width:900px){
+    #menu{
+        display: block;
+
+    }
+   
+    main{
+        position: relative;
+    }
+    .blackw{
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(9, 0, 0,0.6);
+        display: none;
+        overflow: scroll;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    header{
+        width: 70%;
+    }
+    .main-info .grid-two-col{
+        flex-wrap: wrap-reverse;
+        padding: 1rem;
+    }
+    .main-contact{
+        width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    .main-contact form{
+        display: flex;
+       
+    }
+   .mainarea{
+    z-index: -14;
+   }
+    .main-hero{
+        position: absolute;
+        z-index: -12;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+    
+    
+    .other-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    :root{
+        --heading:  calc(5.4vw + 1rem);
+        --buttonFont: 0.6rem;
+        --heading48: calc(5vw + 1rem);
+        --text1-6: 1rem;
+        
+    }
+    .bgprofile{
+        justify-content: center;
+        align-items: center;
+
+    }
+    .bgprofile h1{
+        text-align: center;
+
+    }
+    .projectchild{
+        gap: 2rem;
+    }
+    .projectchild a{
+        width: 300px;
+        height: 200px;
+       }
+    }
+    @media (orientation: landscape) and (max-width:900px) {
+      
+        header{
+            position: relative;
+            overflow: scroll;
+            background-color:red;
+        }
+    }
+.active{
+    background-color: #7e9a9a;
+}
+    
