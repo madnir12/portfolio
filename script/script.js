@@ -1,5 +1,12 @@
 $(document).ready(()=>{
- 
+  // search area
+  let ainfo = $(".ainfo");
+  Array.from(ainfo).forEach((element)=> {
+    let h3 = element.getElementsByTagName("h3")[0].innerText;
+    console.log(h3);
+  });  
+  
+  // end search area
   // showing profile
   let activeProject = $(".trgproject");
   activeProject.click(()=>{
