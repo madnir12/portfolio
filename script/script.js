@@ -1,10 +1,25 @@
 $(document).ready(()=>{
-  // search area
+  // search 
+  $(".search").on("submit",(event)=>{
+    event.preventDefault()
+
+});
   let ainfo = $(".ainfo");
-  Array.from(ainfo).forEach((element)=> {
-    let h3 = element.getElementsByTagName("h3")[0].innerText;
-    console.log(h3);
-  });  
+  $("#searchValue").on("input",()=>{
+   let val = $("#searchValue").val().toLowerCase();
+    Array.from(ainfo).forEach((element)=> {
+      
+      let h3 = element.getElementsByTagName("h3")[0].innerText.toLowerCase();
+      let P = element.getElementsByTagName("P")[0].innerText.toLowerCase();
+      if(h3.includes(val) || P.includes(val)){
+        $(element).fadeIn("slow");
+      }else{
+        $(element).fadeOut("slow");
+      }
+      // console.log(h3 + P + val);
+    });
+  });
+   
   
   // end search area
   // showing profile
